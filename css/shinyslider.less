@@ -1,0 +1,132 @@
+.shinyslider {
+	position: relative;
+	
+	&.shinyslider_inline {
+	
+		.shinyslider_view {
+			position: relative;
+			width: 400px;
+			height: 300px;
+			margin-bottom: 10px;
+			
+			img {
+				position: relative;
+				z-index: 1;
+				display: block;
+				max-height: 350px;
+				max-width: 810px;
+				margin: 0 auto;
+				padding: 0;
+			}
+			
+			.shinyslider_loader {
+				position: absolute;
+				top: 135px;
+				left: 190px;
+				width: 30px;
+				height: 30px;
+				z-index: 2;
+				
+				img {
+					display: block;
+				}
+			}
+		}
+	
+		.shinyslider_item {
+			width: 400px;
+			height: 75px;
+			position: relative;
+			overflow: hidden;
+			
+			.shinyslider_item_view {
+				z-index: 1;
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 3000px;
+				
+				a {
+					margin-right: 13px;
+					position: relative;
+					z-index: 1;
+					float: left;
+					
+					img {
+						display: block;
+						padding: 0;
+					}
+					
+					.zoom {
+						position: absolute;
+						top: 12px;
+						left: 20px;
+						z-index: 2;
+						display: none;
+						width: 24px;
+						height: 24px;
+						background: url('../img/bg/sprite.png') no-repeat -25px -121px;
+					}
+					
+					&:hover {
+						
+						.zoom { display: block; }
+					}
+				}
+			}
+			
+			.shinyslider_control {
+				z-index: 2;
+				position: absolute;
+				text-indent: -9999px;
+				width: 25px;
+				height: 60px;
+				background: fade(#000,30%);
+				cursor: pointer;
+				
+				span {
+					display: block;
+					position: absolute;
+					top: 15px;
+					left: 4px;
+					width: 15px;
+					height: 35px;
+					background: url('../img/btn/shinyslider.png') no-repeat;
+				}
+				
+				&:hover { background: fade(#000,70%); }
+				
+				&.next {
+					left: 375px;
+					
+					span { background-position: -17px 0; }
+				}
+			}
+		}
+	}
+	
+	
+	
+	
+	&.shinyslider_diaporama {
+		
+		img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 1;
+		}
+		
+		.shinyslider_control_diaporama {
+			position: absolute;
+			z-index: 2;
+			
+			a { 
+				float: left;
+				display: block;
+				border: 1px solid #fff;
+			}
+		}
+		
+	}
+}
