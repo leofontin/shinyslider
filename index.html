@@ -13,9 +13,7 @@
 	
 	<link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
 	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-	
-	<link href="css/shinyslider.less" rel="stylesheet/less" type="text/css" media="all" />
-	<script type="text/javascript" src="http://leofontin.fr/labs/__tools/less.js" ></script>
+	<link href="css/shinyslider.css" rel="stylesheet" type="text/css" media="all" />
 	
 	
 	
@@ -25,12 +23,36 @@
 <body>
 	
 	<h1>Diaporama</h1>
-	<div class="diaporama">	
+	
+	<!--
+<div class="diaporama">	
 		<img src="http://www.trappeursdepresent.fr/media/img/web/trappeur-341.jpg" alt="" />
 		<img src="http://www.trappeursdepresent.fr/media/img/web/trappeur-342.jpg" alt="" />
 		<img src="http://www.trappeursdepresent.fr/media/img/web/trappeur-343.jpg" alt="" />
 		<img src="http://www.trappeursdepresent.fr/media/img/web/trappeur-344.jpg" alt="" />
 		<img src="http://www.trappeursdepresent.fr/media/img/web/trappeur-345.jpg" alt="" />
+	</div>
+-->
+	
+	<div class="galery">
+		<a href="http://www.trappeursdepresent.fr/media/img/web/trappeur-341.jpg">	
+			<img src="http://www.trappeursdepresent.fr/media/img/icon/trappeur-341.jpg" alt="" />
+		</a>
+		<a href="http://www.trappeursdepresent.fr/media/img/web/trappeur-342.jpg">	
+			<img src="http://www.trappeursdepresent.fr/media/img/icon/trappeur-342.jpg" alt="" />
+		</a>
+		<a href="http://www.trappeursdepresent.fr/media/img/web/trappeur-343.jpg">	
+			<img src="http://www.trappeursdepresent.fr/media/img/icon/trappeur-343.jpg" alt="" />
+		</a>
+		<a href="http://www.trappeursdepresent.fr/media/img/web/trappeur-344.jpg">	
+			<img src="http://www.trappeursdepresent.fr/media/img/icon/trappeur-344.jpg" alt="" />
+		</a>
+		<a href="http://www.trappeursdepresent.fr/media/img/web/trappeur-345.jpg">	
+			<img src="http://www.trappeursdepresent.fr/media/img/icon/trappeur-345.jpg" alt="" />
+		</a>
+		<a href="http://www.trappeursdepresent.fr/media/img/web/trappeur-346.jpg">	
+			<img src="http://www.trappeursdepresent.fr/media/img/icon/trappeur-346.jpg" alt="" />
+		</a>
 	</div>
 	
 	<script src="http://leofontin.fr/labs/__tools/jquery.js"></script>
@@ -40,7 +62,8 @@
 		
 		$(function(){
 			
-			$('.diaporama').shinyslider({ view : 'diaporama'});
+			$('.diaporama').shinyslider({ view : 'diaporama' });
+			$('.galery').shinyslider({});
 			
 		});
 		

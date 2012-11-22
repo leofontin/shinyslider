@@ -23,7 +23,7 @@
 		var $settings = {
 			width_item 	: 100,
 			nbitem_page : 5,
-			view 		: 'inline',
+			view 		: 'galery',
 			auto		: false,
 			timer		: 3000
 		};
@@ -82,16 +82,16 @@
 				break;
 				
 				
-				case 'inline':
+				case 'galery':
 				case 'box':
 				
-					$obj.addClass('shinyslider shinyslider_inline');
+					$obj.addClass('shinyslider shinyslider_galery');
 				
-					if($settings['view'] == 'inline'){
+					if($settings['view'] == 'galery'){
 						$obj.prepend('<div class="shinyslider_view"></a>');
 						$view = $('.shinyslider_view',$obj);
 					
-						$view.append('<div class="shinyslider_loader"><img src="' + helper.getBaseUrl() + 'static/img/icon/loader.gif" /></div>');
+						$view.append('<div class="shinyslider_loader"><img src="img/icon/loader.gif" /></div>');
 						$loader = $('.shinyslider_loader',$view);
 					}
 					
@@ -149,7 +149,7 @@
 				break;
 				
 				
-				case 'inline':
+				case 'galery':
 				case 'box':
 				
 					$item_box.append('<a class="shinyslider_control previous"><span>Précédent</span></a><a class="shinyslider_control next"><span>Suivant</span></a>');
@@ -190,7 +190,7 @@
 					
 				break;
 				
-				case 'inline':
+				case 'galery':
 				case 'box':
 				
 					if(sens){
@@ -243,8 +243,8 @@
 				
 				
 				
-				// présentation inline
-				case 'inline':
+				// présentation galery
+				case 'galery':
 				
 					// affichage de la première image
 					var src = $item.eq(0).attr('href');
