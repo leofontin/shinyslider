@@ -1,0 +1,14 @@
+{
+  "name": "shinybox",
+  "homepage": "https://github.com/leofontin/shinyslider",
+  "authors": [
+    "Léo Fontin"
+  ],
+  "description": "Slider for jQuery",
+  "main": "js/jquery.shinyslider.js",
+  "moduleType": [],
+  "license": "MIT",
+  "dependencies": {
+    "jquery": "2.2.0"
+  }
+}
